@@ -1,0 +1,37 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class=" mt-5" xmlns="http://www.w3.org/1999/html">
+    <div class="text-center">
+        <img src="{% static 'core/images/Resume.jpg' %}" alt="ProfilePic" class="img-thumbnail"
+         width="250px" height="150px">
+    </div>
+    <div class="mt-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height:2rem;">
+            <p style="text-indent:100px;"> I am <b
+                class="text-warning">Vaishnav Nair</b>
+                I've worked hard in my education and now I'm ready to apply my knowledge into practice.
+                While I don't have any real-life work experience.</p>
+            <p>
+               Since I finished my degree on Bachelor Of Enginerring in Information Technology with CGPA of
+                6.76 to 7th sem from,<b class="text-warning"> St John College Of Engineering And Management.</b>
+                Looking forward to have a good career in Full Stack Developer also just pushing myself to clear my
+                basics in all sort of programming language.
+
+            </p>
+            <!--
+            <p>
+                Accomplished certain projects to my knowledge, including year-end projects.
+                Where multiple languages were used such as machine learning, <b class="text-warning"> Java, HTML, CSS, BOOTSTRAP, JAVASCRIPT, PYTHON.</b>
+
+            </p>
+            -->
+        </div>
+
+    </div>
+   <div class="text-center mt-5">
+        <a href="{% url 'contact'%}" class="btn btn-outline-warning my-3 mr-5">Personal Info</a>
+   </div>
+</div>
+{% endblock content %}
